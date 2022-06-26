@@ -34,6 +34,11 @@ nav ul li a:hover{
 .hamburger{
     text-align: center;
     background-color: whitesmoke;
+    cursor: pointer;
+}
+.hamburger button{
+    background-color: rgba(255,255,255,0);
+    border: none;
 }
 .bannerImg{
     width: 100%;
@@ -76,7 +81,11 @@ nav ul li a:hover{
             margin-bottom: 1em;
         }
         .navbar ul li{
-            display: inline;
+            display: block;
+            width: 100%;
+        }
+        .navbar ul li :hover{
+            background-color: whitesmoke;
         }
     }
     @media (max-width: 1000px){
@@ -86,6 +95,7 @@ nav ul li a:hover{
         }
         #menu.hamToggle{
             display:block;
+            padding: 1em;
         }
     }
     @media (min-width: 1001px){
